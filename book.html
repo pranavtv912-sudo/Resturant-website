@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Slot | Our Resturant</title>
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+      font-family: Poppins, sans-serif;
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+    }
+
+    .page-wrapper {
+      padding: 90px 15px 40px;
+    }
+
+    .title-main {
+      text-align:center;
+      font-size:32px;
+      font-weight:700;
+      margin-bottom:6px;
+    }
+
+    .title-sub {
+      text-align:center;
+      max-width:550px;
+      margin:0 auto 30px;
+      color:#374151;
+      font-size:14px;
+    }
+
+    .card-soft {
+      border-radius:15px;
+      border:none;
+      box-shadow:0 10px 25px rgba(0,0,0,0.18);
+      background:#ffffffee;
+      backdrop-filter: blur(6px);
+    }
+
+    .card-soft h4 {
+      font-weight:600;
+    }
+
+    .dim-overlay {
+      font-size:12px;
+      color:#6b7280;
+      background:#f3f4f6;
+      border-radius:10px;
+      padding:8px 12px;
+      display:inline-block;
+      margin-bottom:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Our resturant</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="build.html">Build</a></li>
+        <li class="nav-item"><a class="nav-link active" href="book.html">Book Slot</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+
+      <a href="login.html" class="btn btn-outline-light px-3">Login</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container page-wrapper">
+
+  <h1 class="title-main">Book Your Slot</h1>
+  <p class="title-sub">
+    First login with your email or phone number. After login, you can choose
+    date, time and number of guests to book your table.
+  </p>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-lg-5">
+      <div class="card card-soft p-4">
+        <h4 class="mb-3">Login</h4>
+        <p class="small text-muted mb-3">
+          Login to continue your booking
+        </p>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Email or Phone</label>
+            <input type="text" class="form-control" placeholder="Enter email or mobile number">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Password / OTP</label>
+            <input type="password" class="form-control" placeholder="Enter password / OTP">
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100">
+            Login
+          </button>
+
+          <p class="small text-muted mt-2 mb-0">
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-7">
+      <div class="card card-soft p-4">
+        <span class="dim-overlay">Please login first to confirm your slot</span>
+        <h4 class="mb-3">Slot Details</h4>
+
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your full name">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Mobile</label>
+              <input type="tel" class="form-control" placeholder="Your mobile number">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Time</label>
+              <input type="time" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Number of Guests</label>
+              <select class="form-select">
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5+</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Table Type</label>
+              <select class="form-select">
+                <option selected>Indoor</option>
+                <option>Outdoor</option>
+                <option>Family</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Special Request</label>
+              <textarea class="form-control" rows="2"
+                        placeholder="Birthday, anniversary, decoration, etc."></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-outline-dark w-100">
+                Book Slot 
+              </button>
+            </div>
+          </div>
+
+          <p class="small text-muted mt-2 mb-0">
+          </p>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
